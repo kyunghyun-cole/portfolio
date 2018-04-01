@@ -610,27 +610,27 @@ span.item_time_sale span#sale {
 }
 
 .interior_wrap .interior_bg .interior_rug {
-	background-color: #f1c323;
-	border: 2px solid #d4ab1e;
+	background-color: rgba(241,195,35,0.8);
+	border: 2px solid rgba(241,195,35,0.8);
 	position: absolute;
 	top:592px; left:182px;
 }
 
 .interior_wrap .interior_bg .interior_chair {
-	background-color: #4169e1;
-	border: 2px solid #2e5be4;
+	background-color: rgba(65,105,255,0.8);
+	border: 2px solid rgba(65,105,255,0.8);
 	position: absolute;
 	top:370px; left:540px;
 }
 .interior_wrap .interior_bg .interior_light {
-	background-color: #5cb410;
-	border: 2px solid #88c652;
+	background-color: rgba(92,180,16,0.8);
+	border: 2px solid rgba(92,180,16,0.8);
 	position: absolute;
 	top:150px; left:790px;
 }
 .interior_wrap .interior_bg .interior_door {
-	background-color: #b0c4de;
-	border: 2px solid #99b6dd;
+	background-color: rgba(176,196,222,0.8);
+	border: 2px solid rgba(176,196,222,0.8);
 	position: absolute;
 	top:500px; right:95px;
 }
