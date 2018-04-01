@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>IKEA 행복한 우리집</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+    <header class="ikea_header">
+      <div class="top_nav_line">
+      <section class="top_nav">
+        <ul class="top_nav_left">
+          <li><a href="#">고객지원</a></li>
+          <li><a href="#">매장안내</a></li>
+          <li><a href="#">IKEA FAMILY</a></li>
+        </ul>
+        <ul class="top_nav_right">
+          <li><a href="#">로그인</a></li>
+          <li><a href="#">프로필</a></li>
+          <li><a href="#">장바구니</a></li>
+        </ul>
+      </section>  <!-- top_nav -->
+    </div> <!-- top_nav_line -->
+    <div class="submenu_bg"></div>
+      <section class="gnb_nav">
+        <h1><a href="#">IKEA</a></h1>
+        <nav>
+          <ul>
+            <li class="menu_place"><a href="#">공간</a>
+                <ul class="submenu submenu_place ">
+                  <li><a href="#">침실</a></li>
+                  <li><a href="#">거실</a></li>
+                  <li><a href="#">사무실</a></li>
+                  <li><a href="#">세탁</a></li>
+                  <li><a href="#">식당</a></li>
+                  <li><a href="#">어린이방</a></li>
+                  <li><a href="#">야외</a></li>
+                  <li><a href="#">욕실</a></li>
+                  <li><a href="#">주방</a></li>
+                  <li><a href="#">현관</a></li>
+                  <li><a href="#">홈오피스</a></li>
+                </ul>
+            </li>
+            <li class="menu_product"><a href="#">제품</a>
+                <ul class="submenu submenu_product">
+                  <li><a href="#">소파·의자·책상</a></li>
+                  <li><a href="#">침대·매트리스</a></li>
+                  <li><a href="#">어린이 IKEA</a></li>
+                  <li><a href="#">수납</a></li>
+                  <li><a href="#">요리·식기·주방가구</a></li>
+                  <li><a href="#">조명</a></li>
+                  <li><a href="#">텍스타일·러그·커튼</a></li>
+                  <li><a href="#">홈데코</a></li>
+                  <li><a href="#">욕실</a></li>
+                  <li><a href="#">야외용가구·가전제품</a></li>
+                  <li><a href="#">여름용 소품</a></li>
+                  <li><a href="#">IKEA Food</a></li>
+                </ul>
+            </li>
+            <li><a href="#">NEW</a></li>
+            <li><a href="#">재입고상품</a></li>
+            <li class="menu_idea"><a href="#">아이디어</a>
+                <ul class="submenu submenu_idea">
+                  <li><a href="#">홈퍼니싱 아이디어</a></li>
+                  <li><a href="#">IKEA로 꾸민 우리집</a></li>
+                  <li><a href="#">SNS #이케아</a></li>
+                </ul>
+            </li>
+            <li class="menu_event"><a href="#">이벤트</a>
+                <ul class="submenu submenu_event">
+                  <li><a href="#">고양점</a></li>
+                  <li><a href="#">광명점</a></li>
+                  <li><a href="#">IKEA 패밀리 워크숍</a></li>
+                </ul>
+            </li>
+            <li class="menu_story"><a href="#">이케아이야기</a>
+                <ul class="submenu submenu_story">
+                  <li><a href="#">IKEA 컨셉</a></li>
+                  <li><a href="#">데모크래틱 디자인</a></li>
+                  <li><a href="#">IKEA 그룹 기업정보</a></li>
+                  <li><a href="#">IKEA의 작업현장</a></li>
+                  <li><a href="#">IKEA 하이라이트</a></li>
+                  <li><a href="#">사람과 지구</a></li>
+                </ul>
+            </li>
+          </ul>
+        </nav>
+      </section> <!--gnb_nav-->
+    </header> <!-- ikea_header -->
+    <section class="search">
+      <div class="searchbox_wrap">
+        <input type="search" placeholder="찾으시는 상품을 검색하세요." class="searchbox">
+        <button class="search_btn"></button>
+      </div>
+    </section> <!-- search -->
+    <section class="banner">
+      <div class="banner_img">
+        <ul>
+          <li><a href="#"><img class="banner_inner_img" src="img/banner01.png" alt="홈퍼니싱 페스티벌"></a></li>
+          <li><a href="#"><img class="banner_inner_img" src="http://via.placeholder.com/1920x565" alt="오혁의 거실은?"></a></li>
+          <li><a href="#"><img class="banner_inner_img" src="http://via.placeholder.com/1920x565" alt="홈퍼니싱 아이디어"></a></li>
+        </ul>
+      </div>
+      <div class="banner_btn_wrap">
+      <div class="banner_btn">
+        <ul>
+          <li>IKEA 홈퍼니싱 페스티벌</li>
+          <li>오혁의 거실은?</li>
+          <li>홈퍼니싱 아이디어</li>
+        </ul>
+        <div class="banner_btn_loading"></div>
+      </div> <!-- banner_btn -->
+      </div> <!-- banner_btn_wrap -->
+    </section> <!-- banner -->
+    <section class="feature_product_container">
+      <div class="product_tab_wrap">
+        <nav class="product_tab">
+          <span>나를 위한 추천상품</span>
+          <span>많이 검색한 상품</span>
+          <span>많이 구매한 상품</span>
+        </nav>
+      </div>
+      <div class="product_list_container recommend">
+      <ul class="product_list">
+        <li>
+          <article>
+            <a href="#">
+              <img src="img/product_list_01.png" alt="">
+              <span class="rcm_product">옷장</span>
+              <span class="rcm_product_name">ANEBODA</span>
+              <span class="rcm_product_price">\84,900</span>
+            </a>
+            <span class="item_best"><a href="#">BEST</a></span>
+          </article>
+        </li>
+        <li>
+          <article>
+            <a href="#">
+              <img src="img/product_list_02.png" alt="">
+              <span class="rcm_product">선반유닛</span>
+              <span class="rcm_product_name">HYLLIS</span>
+              <span class="rcm_product_price">\15,000</span>
+            </a>
+          </article>
+        </li>
+        <li>
+          <article>
+            <a href="#">
+              <img src="img/product_list_03.png" alt="">
+              <span class="rcm_product">미닫이 옷장 + 도어2</span>
+              <span class="rcm_product_name">KVIKNE</span>
+              <span class="rcm_product_price">\152,000</span>
+            </a>
+          </article>
+        </li>
+        <li>
+          <article>
+            <a href="#">
+              <img src="img/product_list_04.png" alt="">
+              <span class="rcm_product">코너워크스테이션</span>
+              <span class="rcm_product_name">MICKE</span>
+              <span class="rcm_product_price_sale_before">\169,000</span>
+              <span class="rcm_product_price">\135,200</span>
+            </a>
+            <span class="item_time_sale"><a href="#">TIME<span id="sale">SALE</span></a></span>
+          </article>
+        </li>
+        <li>
+          <article>
+            <a href="#">
+              <img src="img/product_list_05.png" alt="">
+              <span class="rcm_product">미닫이 옷장 + 서랍4</span>
+              <span class="rcm_product_name">TRYSIL</span>
+              <span class="rcm_product_price">\216,000</span>
+            </a>
+          </article>
+        </li>
+        <li>
+          <article>
+            <a href="#">
+              <img src="img/product_list_06.png" alt="">
+              <span class="rcm_product">미닫이 옷장 + 서랍4</span>
+              <span class="rcm_product_name">TRYSIL</span>
+              <span class="rcm_product_price">\216,000</span>
+            </a>
+          </article>
+        </li>
+      </ul>
+      <div class="bx_controls_direction">
+        <a href="#" class="product_list_btn_left">이전</a>
+        <a href="#" class="product_list_btn_right">이후</a>
+      </div>
+      <div class="bx_pager_item_wrap">
+        <a href="#" class="bx_pager_item_active">1</a>
+        <a href="#" class="bx_pager_item">2</a>
+      </div>
+    </div> <!-- product_list_container -->
+    </section> <!-- product -->
+    <section class="interior_wrap">
+      <div class="interior_bg">
+        <div class="interior_title">
+          <h3>주방 SET</h3>
+          <p>안팎으로 깨끗하고 환한 주방</p>
+        </div>
+        <div class="interior_rug interior_item_bg">
+          <h4><a href="#">LOHALS/ <span>\ 29,900</span></a></h4>
+          <p><a href="#">황마는 내구성이<br>우수하고<br>재활용이<br>가능해요.</a></p>
+        </div>
+        <div class="interior_chair interior_item_bg">
+          <h4><a href="#">RÅSKOG/ <span>\ 39,900</span></a></h4>
+          <p><a href="#">플라스틱<br/>다리받침이 있어서<br/>바닥에 물이 있어도<br/>가구가 젖지 않아요.</a></p>
+        </div>
+        <div class="interior_light interior_item_bg">
+          <h4><a href="#">HEKTAR/ <span>\ 29,900</span></a></h4>
+          <p><a href="#">큼지막하고<br/>간결한 실루엣의<br/>전등갓이 인상적인<br/>제품이에요.</a></p>
+        </div>
+        <div class="interior_door interior_item_bg">
+          <h4><a href="#">HITTARP/ <span>\ 50,000</span></a></h4>
+          <p><a href="#">히타르프 도어로<br/>따뜻한 전원풍의 주방을<br/>쉽게 만들 수 있어요.</a></p>
+        </div>
+      </div>
+    </section> <!-- interior -->
+    <section class="social_wrap">
+      <div class="social">
+        <h3><a href="#">소셜미디어 #이케아</a></h3>
+        <div class="sns_content_wrap">
+            <div class="sns_content01 sns_content">
+              <p><a href="#"><img src="img/sns_img01.png" alt="sns이미지"></a></p>
+              <p><a href="#">#이케아 #작업실 #열일 #일하기좋은공간</a></p>
+            </div>
+            <div class="sns_content02 sns_content">
+              <p><a href="#"><img src="img/sns_img02.png" alt="sns이미지"></a></p>
+              <p><a href="">#이케아 #독서 #똑똑해진다 #책읽어야지</a></p>
+            </div>
+            <div class="sns_content03 sns_content">
+              <p><a href="#"><img src="img/sns_img03.png" alt="sns이미지"></a></p>
+              <p><a href="#">#촛불 #분위기좋아 #이케아 #잘샀어</a></p>
+            </div>
+          <div class="sns_content04 sns_content">
+            <p><a href="#"><img src="img/sns_img04.png" alt="sns이미지"></a></p>
+            <p><a href="#">#무선충전기 #득템 #잘어울린다 #이케아</a></p>
+        </div>
+        </div> <!-- sns_content_wrap -->
+        <div class="plus sns_plus">
+          <a href="#">더보기</a>
+        </div>
+      </div>  <!-- social -->
+    </section> <!-- social_wrap -->
+    <section class="service_wrap">
+      <div class="service">
+        <h3>이케아 서비스</h3>
+        <div class="service_content">
+          <ul>
+            <li><a href="#"><span class="service_icon service_icon_01"></span><span>이케아에서 쇼핑하기</span></a></li>
+            <li><a href="#"><span class="service_icon service_icon_02"></span><span>이케아 카달로그</span></a></li>
+            <li><a href="#"><span class="service_icon service_icon_03"></span><span>조립서비스</span></a></li>
+            <li><a href="#"><span class="service_icon service_icon_04"></span><span>픽업/배송서비스</span></a></li>
+            <li><a href="#"><span class="service_icon service_icon_05"></span><span>온라인플래닝</span></a></li>
+          </ul>
+      </div>
+      <div class="plus service_plus">
+        <a href="#">더보기</a>
+      </div>
+    </div> <!-- service -->
+  </section> <!-- service_wrap -->
+    <section class="help_menu_wrap">
+      <div class="help_menu">
+        <ul>
+          <li><a href="#"><img src="img/help_menu_ikea_family.png" alt="이케아패밀리"></a></li>
+          <li><a href="#"><img src="img/help_menu_store.png" alt="이케아지점"></a></li>
+          <li><a href="#"><img src="img/help_menu_callcenter.png" alt="고객상담센터"></a></li>
+      </ul>
+      </div>
+    </section> <!-- help_menu -->
+    <footer class="footer">
+      <div class="footer_content">
+        <div class="footer_content_left">
+          <h3>IKEA</h3>
+          <ul class="footer_site_link">
+            <li><a href="#">쇼핑하기</a></li>
+            <li><a href="#">고객지원</a></li>
+            <li><a href="#">IKEA 서비스</a></li>
+            <li><a href="#">IKEA 그룹에서 일하기</a></li>
+            <li><a href="#">뉴스룸</a></li>
+          </ul>
+      </div> <!-- footer_content_left -->
+        <div class="footer_content_right">
+          <p>이케아 온라인 카탈로그와 브로슈어를 받아보세요.</p>
+          <form>
+            <legend>브로슈어 받기</legend>
+            <label for="input_email">이메일입력</label>
+            <input type="text" id="input_email" placeholder="이메일을 입력하세요." />
+            <button>확인</button>
+          </form>
+        </div> <!-- footer_content_right -->
+      </div> <!-- footer_content -->
+      <div class="footer_personal_info_wrap">
+        <ul class="footer_personal_info">
+          <li><a href="#">웹사이트 이용약관</a></li>
+          <li><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">ⓒ IKEA Korea all right reserved</a></li>
+        </ul>
+      </div>
+    </footer> <!-- footer -->
+  </div> <!-- wrap -->
+  <script src="js/javascript.js"></script>
+  </body>
+</html>
