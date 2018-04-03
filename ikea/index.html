@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>IKEA 행복한 우리집</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <script src="js/jquery-3.3.1.min.js"></script>
   </head>
   <body>
@@ -90,28 +90,32 @@
       </section> <!--gnb_nav-->
     </header> <!-- ikea_header -->
     <section class="search">
-      <div class="searchbox_wrap">
+      <form class="searchbox_wrap">
         <input type="search" placeholder="찾으시는 상품을 검색하세요." class="searchbox">
         <button class="search_btn"></button>
-      </div>
+      </form>
     </section> <!-- search -->
     <section class="banner">
       <div class="banner_img">
         <ul>
           <li><a href="#"><img class="banner_inner_img" src="img/banner01.png" alt="홈퍼니싱 페스티벌"></a></li>
-          <li><a href="#"><img class="banner_inner_img" src="http://via.placeholder.com/1920x565" alt="오혁의 거실은?"></a></li>
-          <li><a href="#"><img class="banner_inner_img" src="http://via.placeholder.com/1920x565" alt="홈퍼니싱 아이디어"></a></li>
+          <li><a href="#"><img class="banner_inner_img" src="img/banner02_02.png" alt="오혁의 거실은?"></a></li>
+          <li><a href="#"><img class="banner_inner_img" src="img/banner03.png" alt="홈퍼니싱 아이디어"></a></li>
         </ul>
       </div>
       <div class="banner_btn_wrap">
-      <div class="banner_btn">
-        <ul>
-          <li>IKEA 홈퍼니싱 페스티벌</li>
-          <li>오혁의 거실은?</li>
-          <li>홈퍼니싱 아이디어</li>
-        </ul>
-        <div class="banner_btn_loading"></div>
-      </div> <!-- banner_btn -->
+        <div class="banner_btn">
+          <ul class="banner_btn_content">
+            <li>IKEA 홈퍼니싱 페스티벌</li>
+            <li>오혁의 거실은?</li>
+            <li>홈퍼니싱 아이디어</li>
+          </ul>
+          <div>
+            <div class="btn_loading btn_loading01"></div>
+            <div class="btn_loading btn_loading02"></div>
+            <div class="btn_loading btn_loading03"></div>
+          </div>
+        </div> <!-- banner_btn -->
       </div> <!-- banner_btn_wrap -->
     </section> <!-- banner -->
     <section class="feature_product_container">
@@ -187,7 +191,7 @@
             </a>
           </article>
         </li>
-      </ul>
+      </ul> <!-- product list -->
       <div class="bx_controls_direction">
         <a href="#" class="product_list_btn_left">이전</a>
         <a href="#" class="product_list_btn_right">이후</a>
@@ -296,12 +300,17 @@
           </form>
         </div> <!-- footer_content_right -->
       </div> <!-- footer_content -->
-      <div class="footer_personal_info_wrap">
+      <div class="footerinfo_wrap">
         <ul class="footer_personal_info">
           <li><a href="#">웹사이트 이용약관</a></li>
           <li><a href="#">개인정보처리방침</a></li>
           <li><a href="#">ⓒ IKEA Korea all right reserved</a></li>
         </ul>
+          <ul class="footer_sns">
+            <li><a href="#"><img src="img/footer_facebook.png" alt="페이스북"></a></li>
+            <li><a href="#"><img src="img/footer_instagram.png" alt="페이스북"></a></li>
+            <li><a href="#"><img src="img/footer_youtube.png" alt="페이스북"></a></li>
+          </ul>
       </div>
     </footer> <!-- footer -->
   </div> <!-- wrap -->

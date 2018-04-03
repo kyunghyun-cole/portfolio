@@ -1,52 +1,52 @@
 // nav mouseover 효과
 $('.menu_place').mouseover(function(){
-  $('.submenu_place').css('display','block');
-  $('.submenu_bg').css('display','block');
+  $('.submenu_place').stop().slideDown();
+  $('.submenu_bg').stop().slideDown();
 })
 
 $('.menu_place').mouseleave(function(){
-  $('.submenu_place').css('display','none');
-  $('.submenu_bg').css('display','none');
+  $('.submenu_place').stop().slideUp('fast');
+  $('.submenu_bg').stop().slideUp();
 })
 
 $('.menu_product').mouseover(function(){
-  $('.submenu_product').css('display','block');
-  $('.submenu_bg').css('display','block');
+  $('.submenu_product').stop().slideDown();
+  $('.submenu_bg').stop().slideDown();
 })
 
 $('.menu_product').mouseleave(function(){
-  $('.submenu_product').css('display','none');
-  $('.submenu_bg').css('display','none');
+  $('.submenu_product').stop().slideUp('fast');
+  $('.submenu_bg').stop().slideUp();
 })
 
 $('.menu_idea').mouseover(function(){
-  $('.submenu_idea').css('display','block');
-  $('.submenu_bg').css('display','block');
+  $('.submenu_idea').stop().slideDown();
+  $('.submenu_bg').stop().slideDown();
 })
 
 $('.menu_idea').mouseleave(function(){
-  $('.submenu_idea').css('display','none');
-  $('.submenu_bg').css('display','none');
+  $('.submenu_idea').stop().slideUp('fast');
+  $('.submenu_bg').stop().slideUp();
 })
 
 $('.menu_event').mouseover(function(){
-  $('.submenu_event').css('display','block');
-  $('.submenu_bg').css('display','block');
+  $('.submenu_event').stop().slideDown();
+  $('.submenu_bg').stop().slideDown();
 })
 
 $('.menu_event').mouseleave(function(){
-  $('.submenu_event').css('display','none');
-  $('.submenu_bg').css('display','none');
+  $('.submenu_event').stop().slideUp('fast');
+  $('.submenu_bg').stop().slideUp();
 })
 
 $('.menu_story').mouseover(function(){
-  $('.submenu_story').css('display','block');
-  $('.submenu_bg').css('display','block');
+  $('.submenu_story').stop().slideDown();
+  $('.submenu_bg').stop().slideDown();
 })
 
 $('.menu_story').mouseleave(function(){
-  $('.submenu_story').css('display','none');
-  $('.submenu_bg').css('display','none');
+  $('.submenu_story').stop().slideUp('fast');
+  $('.submenu_bg').stop().slideUp();
 })
 
 
@@ -64,7 +64,7 @@ function start_slide () {
     } else {
       count++;
     }
-  },3000)
+  },5000)
 }
 
 start_slide();
@@ -97,23 +97,55 @@ $('.banner_btn li').eq(2).click(function(){
 })
 
 
-// 배너 버튼 로딩?
-/*
- var i = 0
-function banner_loading (){
-    while (i < 3 ) {
-      if(i == 0 && count == 0) {
-        $('.banner_btn_loading').css('width','313px');
-        i++;
-      } else if(i == 1 && count== 1) {
-        $('.banner_btn_loading').css('width','313px');
-        i++;
-      } else if (i == 2 && count== 2){
-        $('.banner_btn_loading').css('width','313px');
-        i=0;
-      };
-      $('.banner_btn_loading').css('width','50px')
-    };
-  };
-  banner_loading();
-  */
+// 배너 로딩 버튼
+var btn_count = 0
+var auto_btn_slide
+
+function btn_slide () {
+  auto_btn_slide = setInterval(function(){
+    $('.btn_loading').eq(btn_count).siblings().css('display','none');
+    $('.btn_loading').eq(btn_count).css('display','block');
+    $('.btn_loading').eq(btn_count).siblings().css('width','50px');
+    $('.btn_loading').eq(btn_count).css('width','318px');
+
+    if(btn_count === 2) {
+      btn_count = 0;
+    } else {
+      btn_count++;
+    }
+  },5000)
+}
+
+  btn_slide();
+
+$('.banner_btn_content li').eq(0).click(function(){
+  clearInterval(auto_btn_slide);
+  btn_count = 0;
+  $('.btn_loading').eq(btn_count).css('display','block');
+  $('.btn_loading').eq(btn_count).siblings().css('display','none');
+  $('.btn_loading').eq(btn_count).siblings().css('width','50px');
+  $('.btn_loading').eq(btn_count).css('width','318px');
+  btn_count++;
+  btn_slide();
+})
+
+$('.banner_btn_content li').eq(1).click(function(){
+  clearInterval(auto_btn_slide);
+  btn_count = 1;
+  $('.btn_loading').eq(btn_count).siblings().css('width','50px');
+  $('.btn_loading').eq(btn_count).css('display','block');
+  $('.btn_loading').eq(btn_count).siblings().css('display','none');
+  $('.btn_loading').eq(btn_count).css('width','318px');
+  btn_count++;
+  btn_slide();
+})
+
+$('.banner_btn_content li').eq(2).click(function(){
+  clearInterval(auto_btn_slide);
+  btn_count = 2;
+  $('.btn_loading').eq(btn_count).siblings().css('width','50px');
+  $('.btn_loading').eq(btn_count).css('display','block');
+  $('.btn_loading').eq(btn_count).siblings().css('display','none');
+  $('.btn_loading').eq(btn_count).css('width','318px');
+  btn_slide();
+})
