@@ -1,0 +1,129 @@
+footer {
+}
+
+.footer_top {
+  background: #333b45;
+}
+
+.footer_top .footer_list::after{
+  display:block;
+  content:'';
+  clear:both;
+}
+
+.footer_top .footer_list li {
+  float: left;
+  height: 38px;
+  line-height: 38px;
+  padding-right: 40px;
+
+}
+.footer_top .footer_list li a {
+  color:#fff;
+  font-size:11px;
+}
+
+.footer_top .footer_list > li:nth-child(1) a {
+  font-weight: 700;
+}
+
+.footer_top .site {
+  float:right;
+  height: 38px;
+  line-height: 38px;
+  color:#fff;
+  font-size:12px;
+  width:150px;
+  height:38px;
+  background: #1f3146;
+  text-indent: 15px;
+  cursor:pointer;
+  background-image: url(img/footer_top_btn.png);
+  background-repeat: no-repeat;
+  background-position: 130px center;
+  position: relative;
+  user-select: none;
+}
+
+.footer_top .site .site_submenu {
+  width: 150px;
+  height:118px;
+  background: #333b45;
+  position: absolute;
+  top: -118px;
+  display: none;
+}
+
+.footer_top .site .site_submenu li {
+  height:23px;
+  line-height: 23px;
+  user-select: none;
+}
+
+
+/* footer_top 끝  */
+
+/* footer_container 시작 */
+
+.footer_container {
+  height:108px;
+  background: #fff;;
+}
+.footer_container .footer_content::after{
+  display:block;
+  content:'';
+  clear:both;
+}
+
+.footer_container .footer_content h3 {
+  background-image: url(img/footer_logo.png);
+  background-repeat: no-repeat;
+  width: 105px;
+  height: 35px;
+  text-indent: -9999px;
+  float:left;
+  margin-left:24px;
+  margin-top:30px;
+}
+
+.footer_container .footer_content address {
+    padding-top:40px;
+    padding-left:100px;
+    float: left;
+    font-size: 11px;
+}
+.footer_container .footer_content address span {
+  background-image: url(img/footer_line.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  padding:0 10px;
+}
+
+.footer_container .footer_content address span:nth-child(3) {
+  background-image: none;
+}
+
+.footer_container .footer_content address span:nth-child(4) {
+  display: block;
+  background-image: none;
+  margin-top: 20px;
+}
+
+.footer_container .footer_content .footer_img {
+  float:right;
+}
+
+.footer_container .footer_content .footer_img ul {
+  margin-top: 40px;
+}
+
+.footer_container .footer_content .footer_img ul::after {
+  display:block;
+  content:'';
+  clear:both;
+}
+
+.footer_container .footer_content .footer_img li {
+  float: left;
+  padding-left: 20px;
+}

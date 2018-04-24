@@ -1,0 +1,21 @@
+.visual p{
+  background-image: url(img/ceopage_visual.png);
+  background-repeat: no-repeat;
+  width:1920px;
+  height:200px;
+}
+
+.my_location {
+  background: #f3f3f3;
+  height: 50px;
+  line-height: 50px;
+}
+
+
+.my_location > .inner .location_li {
+  float: left;
+}
+
+.my_location li a {
+  font-size: 13px;
+}

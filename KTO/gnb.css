@@ -1,0 +1,224 @@
+/* 초기화 코드 시작 */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike,
+strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  color: #141414;
+  text-decoration: none;
+  list-style: none;
+  font-family: 나눔고딕;
+}
+
+/* HTML5 display_role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 초기화 코드 끝 */
+
+.inner {
+  width: 1200px;
+  height:100%;
+  margin: 0 auto;
+}
+
+/* header 시작 */
+
+header {
+  height: 105px;
+  background: #fff;
+}
+
+/* header_top 시작 */
+.header_top {
+  height: 30px;
+  background: #333b45;
+}
+
+.header_top a {
+  font-size: 11px;
+  color: #fff;
+}
+
+
+.header_top .inner::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.header_top .header_top_box1 {
+  float: left;
+  margin-left: 16px;
+}
+
+.header_top .header_top_box2 {
+  float: right;
+  margin-right: 45px;
+}
+
+.header_top .header_top_box1  .header_top_box1_lst::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.header_top .header_top_box2  .header_top_box2_lst::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.header_top .header_top_box1  .header_top_box1_lst li {
+  line-height: 30px;
+  margin-right: 16px;
+  float: left;
+}
+.header_top .header_top_box2 .header_top_box2_lst li {
+  line-height: 30px;
+  margin-left: 16px;
+  float: left;
+}
+
+/* header_top 끝 */
+
+/* header_bottom 시작 */
+.header_bottom {
+  height: 75px;
+  position: relative;
+}
+.nav_wrap {
+  width: 1200px;
+  height: 75px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header_bottom h1 a{
+  display:block;
+  background-image: url(img/logo.png);
+  width:130px;
+  height: 44px;
+  top: 12px;
+  left: 34px;
+  position: absolute;
+}
+
+.header_bottom h1 a span {
+  position: absolute;
+  text-indent: -9999px;
+}
+
+
+
+/* header_bottom .gnb 시작 */
+nav .gnb_bg {
+  width: 160%;
+  height:245px;
+  background: rgba(138, 144, 150, 0.54);
+  position:absolute;
+  top:75px;
+  z-index: 2;
+  left:-370px;
+  display:none;
+}
+
+.header_bottom .gnb {
+  position: absolute;
+  top:30px;
+  left: 245px;
+  z-index: 3;
+}
+
+.header_bottom .gnb ul li {
+  float: left;
+  width: 180px;
+  text-align: center;
+}
+
+.header_bottom .gnb > ul > li:hover > a {
+  padding-bottom:22px;
+  border-bottom: 6px solid #ff9100;
+}
+
+.header_bottom .gnb > ul > li:hover .submenu {
+  background: rgba(255, 163, 0, 0.93);
+}
+
+.header_bottom .gnb .submenu {
+  width:180px;
+  height: 245px;
+  position: absolute;
+  top: 45px;
+  display:none;
+}
+
+.header_bottom .gnb .submenu li {
+  height: 34px;
+  line-height: 34px;
+  background-image: url(img/submenu_line.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.header_bottom .gnb .submenu li:last-child {
+  background-image: none;
+}
+
+.header_bottom .gnb .submenu li:hover a {
+  color:#141414;
+  font-weight: 900;
+}
+
+.header_bottom .gnb .submenu li  a {
+  font-size: 14px;
+  color:#fff;
+}
+
+.header_bottom .search {
+  position: absolute;
+  right: -20px;
+  top:0;
+  bottom: 1px;
+}
+
+.header_bottom .search button {
+  width:20px;
+  height: 20px;
+  text-indent: -9999px;
+  background-color: #fff;
+  background-image: url(img/search.png);
+  border: none;
+}
+
+/* header_bottom .gnb 끝 */
+/* header_bottom 끝 */
+/* header 끝 */
