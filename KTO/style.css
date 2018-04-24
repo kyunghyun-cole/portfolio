@@ -443,7 +443,7 @@ background-repeat:no-repeat;
 }
 
 .koreatour h3 a {
-  display: block;
+  display: inline-block;
   text-indent: 22px;
   font-weight: 600;
   color:#fff;
@@ -466,11 +466,15 @@ background-repeat:no-repeat;
   float: left;
   width:200px;
   height: 188px;
-  padding-right: 40px;
+  margin-right:40px;
+}
+
+.koreatour ul li:hover a .koreatour_article{
+  color: #ffa300;
 }
 
 .koreatour ul li:nth-child(3){
-  padding-right: 0;
+  margin-right: 0;
 }
 .koreatour .koreatour_tit {
   display: block;
@@ -488,9 +492,6 @@ background-repeat:no-repeat;
   line-height: 15px;
 }
 
-.koreatour .koreatour_article:hover {
-  color: #ffa300;
-}
 
 .koreatour .koreatour_plus a{
   background-image: url(img/tour_btn.png);

@@ -6,16 +6,228 @@
 }
 
 .my_location {
-  background: #f3f3f3;
+  background: #f6f6f6;
   height: 50px;
   line-height: 50px;
 }
 
-
-.my_location > .inner .location_li {
+.my_location > .inner > .location_li a {
   float: left;
+  background-image: url(img/location_btn.png);
+  background-position:  right;
+  background-repeat: no-repeat;
+  padding: 0 20px;
+  margin: 0 5px;
+}
+
+.my_location > .inner > .location_li:nth-child(1) a {
+  padding-left: 0;
+  margin-left: 0;
 }
 
 .my_location li a {
   font-size: 13px;
+}
+
+.ceo_container {
+  height: 1000px;
+}
+
+/* lnb 시작  */
+.ceo_container > .inner {
+  position: relative;
+}
+.lnb_wrap {
+  position: absolute;
+  top:52px;
+  user-select: none;
+
+}
+
+.lnb_wrap h3 {
+  width: 175px;
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 10px;
+  border-bottom: 4px solid #ff9100;
+}
+
+.lnb_wrap > ul > li  {
+  width: 175px;
+  line-height: 56px;
+  border-bottom: 1px solid #eeeeee;
+  text-indent: 10px;
+  cursor: pointer;
+  font-weight: 600;
+
+}
+
+.lnb_wrap > ul > li:nth-child(1) {
+  border-top: 1px solid #eeeeee;
+  background: #f6f6f6;
+}
+
+.lnb_wrap > ul > li:nth-child(1)  a{
+  color:#ffa52f;
+}
+
+
+.lnb_wrap > ul > li:nth-child(3) {
+  background-image: url(img/lnb_btn.png);
+  background-position: 150px 25px ;
+  background-repeat :no-repeat;
+}
+
+.lnb_wrap > ul > li:last-child {
+  background-image: url(img/lnb_btn.png);
+  background-position: 150px 25px ;
+  background-repeat :no-repeat;
+}
+
+.lnb_wrap .lnb_submenu {
+  line-height: 40px;
+  display: none;
+}
+
+.lnb_wrap .lnb_submenu  li a {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/*  ceo_content */
+
+.ceo_content {
+  width:780px;
+  position: absolute;
+    top:0px;
+    left: 245px;
+    padding-bottom:  48px;
+    border-bottom: 4px solid #ff9100;
+}
+
+.ceo_content h2 {
+  height:38px;
+  padding-top:44px;
+  font-size: 30px;
+  font-weight: 600;
+  border-bottom: 4px solid #ff9100;
+  vertical-align: super;
+}
+
+.ceo_content .ceo_content_img {
+  margin: 0 auto;
+  width: 635px;
+  position: relative;
+}
+
+.ceo_content .ceo_content_img::after{
+  content:' ';
+  display: block;
+  clear: both;
+}
+
+.ceo_content .ceo_content_img p {
+  float: left;
+}
+
+.ceo_content .ceo_content_img .ceo_tit{
+  position: absolute;
+  left:298px;
+  top:60px;
+}
+
+
+.ceo_content .ceo_write {
+  margin: 24px auto 0 auto;
+  width: 635px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+/* 설문조사 */
+.survey_wrap {
+  background: #f9f9f9;
+  width:780px;
+  height: 110px;
+  position: absolute;
+  top:823px;
+  left:245px;
+}
+
+.survey_wrap .survey_inner {
+  width: 470px;
+  margin: 20px auto;
+}
+.survey_wrap .survey_inner::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.survey_wrap .survey_inner h5 {
+  font-size: 12px;
+  text-indent: 26px;
+  height: 17px;
+  line-height: 17px;
+  background-image: url(img/survey_img.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  float: left;
+  margin-right: 35px;
+}
+
+.survey_wrap .survey_inner .survey_radio {
+  float: left;
+  font-size: 11px;
+}
+.survey_wrap .survey_inner .survey_radio h6{
+  display: none;
+}
+
+.survey_wrap .survey_inner .survey_radio label {
+  vertical-align: text-top;
+}
+
+.survey_wrap .survey_inner .survey_txt {
+  float: left;
+  margin: 10px 0;
+}
+
+.survey_wrap .survey_inner .survey_txt input {
+width: 406px;
+height: 24px;
+border: 1px solid #d7d7d7;
+}
+
+.survey_wrap .survey_inner .survey_txt input::placeholder {
+  font-size: 12px;
+  text-indent: 10px;
+}
+
+.survey_wrap .survey_inner .survey_btn::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.survey_wrap .survey_inner .survey_btn button{
+  float: right;
+  width:46px;
+  height: 26px;
+  line-height: 26px;
+  margin: 10px 0;
+  border: none;
+  background-color: #adacac;
+  color: #fff;
+}
+
+.survey_wrap .survey_inner .survey_ps {
+  font-size: 11px;
+}
+
+.survey_wrap .survey_inner .survey_ps p:nth-child(1) {
+  float: left;
+}
+.survey_wrap .survey_inner .survey_ps p:nth-child(2) {
+  float: right;
 }

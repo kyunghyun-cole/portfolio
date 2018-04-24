@@ -1,5 +1,7 @@
 $(document).ready(function() {
-  $('#fullpage').fullpage();
+  $('#fullpage').fullpage( {
+    css3: true
+  });
 });
 
 //  게시판
@@ -73,24 +75,5 @@ $('.control_btn').each(function(index) {
   $(this).attr('data-index', index);
 }).click(function() {
   var index = $(this).attr('data-index');
-  clearInterval(autoSlide);
   moveSlider(index);
 });
-
-var i = 0
-var autoSlide = setInterval(function() {
-  moveSlider(i)
-  if (i == 0) {
-    i++;
-  } else if (i == 1) {
-    i++;
-  } else if (i == 2) {
-    i = 0;
-  }
-}, 1000)
-
-
-// 관련사이트
-$('.site').click(function() {
-  $('.site_submenu').toggle();
-})
