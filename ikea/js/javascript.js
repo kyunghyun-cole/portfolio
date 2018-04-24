@@ -107,7 +107,8 @@ function btn_slide () {
     $('.btn_loading').eq(btn_count).css('display','block');
     $('.btn_loading').eq(btn_count).siblings().css('width','50px');
     $('.btn_loading').eq(btn_count).css('width','318px');
-
+    $('.banner_btn_content li').eq(btn_count).css('color','#0d6cb5');
+    $('.banner_btn_content li').eq(btn_count-1).css('color','#000')
     if(btn_count === 2) {
       btn_count = 0;
     } else {
@@ -125,6 +126,8 @@ $('.banner_btn_content li').eq(0).click(function(){
   $('.btn_loading').eq(btn_count).siblings().css('display','none');
   $('.btn_loading').eq(btn_count).siblings().css('width','50px');
   $('.btn_loading').eq(btn_count).css('width','318px');
+  $('.banner_btn_content li').eq(btn_count).css('color','#0d6cb5');
+  $('.banner_btn_content li').eq(btn_count-1).css('color','#000')
   btn_count++;
   btn_slide();
 })
@@ -136,6 +139,8 @@ $('.banner_btn_content li').eq(1).click(function(){
   $('.btn_loading').eq(btn_count).css('display','block');
   $('.btn_loading').eq(btn_count).siblings().css('display','none');
   $('.btn_loading').eq(btn_count).css('width','318px');
+  $('.banner_btn_content li').eq(btn_count).css('color','#0d6cb5');
+  $('.banner_btn_content li').eq(btn_count-1).css('color','#000')
   btn_count++;
   btn_slide();
 })
@@ -147,5 +152,35 @@ $('.banner_btn_content li').eq(2).click(function(){
   $('.btn_loading').eq(btn_count).css('display','block');
   $('.btn_loading').eq(btn_count).siblings().css('display','none');
   $('.btn_loading').eq(btn_count).css('width','318px');
+  $('.banner_btn_content li').eq(btn_count).css('color','#0d6cb5');
+  $('.banner_btn_content li').eq(btn_count-1).css('color','#000')
   btn_slide();
 })
+
+
+
+// product_tab
+
+$('.product_tab span').eq(0).click(function(){
+  $('.recommend').css('display','block');
+  $('.best').css('display','none');
+  $('.search').css('display','none');
+  $('.product_tab span').eq(0).siblings().removeClass('on');
+  $(this).addClass('on');
+});
+
+$('.product_tab span').eq(1).click(function(){
+  $('.recommend').css('display','none');
+  $('.best').css('display','block');
+  $('.search').css('display','none');
+  $('.product_tab span').eq(1).siblings().removeClass('on');
+  $(this).addClass('on');
+});
+
+$('.product_tab span').eq(2).click(function(){
+  $('.recommend').css('display','none');
+  $('.best').css('display','none');
+  $('.search').css('display','block');
+  $('.product_tab span').eq(2).siblings().removeClass('on');
+  $(this).addClass('on');
+});
