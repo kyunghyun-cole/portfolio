@@ -332,6 +332,10 @@ table {
   margin:0 auto;
 }
 
+.banner .banner_img  {
+  display: block !important;
+}
+
 .banner .banner_img ul {
   position: relative;
   height: 565px;
