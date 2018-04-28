@@ -327,8 +327,11 @@ table {
 /* banner */
 
 .banner {
+  width: 1905px;
   height: 605px;
+  margin:0 auto;
 }
+
 
 .banner .banner_img ul {
   position: relative;
