@@ -327,13 +327,13 @@ table {
 /* banner */
 
 .banner {
-  width: 1905px;
+  width: 100%;
   height: 605px;
-  margin:0 auto;
 }
 
 .banner .banner_img  {
-  display: block !important;
+  width: 100%;
+  height: 605px;
 }
 
 .banner .banner_img ul {
