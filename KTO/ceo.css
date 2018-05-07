@@ -1,8 +1,8 @@
 .visual p{
   background-image: url(img/ceopage_visual.png);
   background-repeat: no-repeat;
-  width:1920px;
   height:200px;
+  background-position:center;
 }
 
 .my_location {
@@ -23,10 +23,6 @@
 .my_location > .inner > .location_li:nth-child(1) a {
   padding-left: 0;
   margin-left: 0;
-}
-
-.my_location > .inner > .location_li:last-child a {
-background-image: none;
 }
 
 .my_location li a {
@@ -119,9 +115,9 @@ background-image: none;
 }
 
 .ceo_content .ceo_content_img {
+  margin: 0 auto;
+  width: 635px;
   position: relative;
-  height:auto;
-  margin:24px 0;
 }
 
 .ceo_content .ceo_content_img::after{
@@ -136,16 +132,16 @@ background-image: none;
 
 .ceo_content .ceo_content_img .ceo_tit{
   position: absolute;
-  left:358px;
-  top:80px;
+  left:298px;
+  top:60px;
 }
 
 
 .ceo_content .ceo_write {
+  margin: 24px auto 0 auto;
+  width: 635px;
   font-size: 14px;
   line-height: 24px;
-   text-align: justify;
-   margin-bottom: 24px;
 }
 
 /* 설문조사 */
