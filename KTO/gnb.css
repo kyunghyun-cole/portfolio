@@ -184,13 +184,6 @@ nav .gnb_bg {
 .header_bottom .gnb .submenu li {
   height: 34px;
   line-height: 34px;
-  background-image: url(img/submenu_line.png);
-  background-repeat: no-repeat;
-  background-position: center bottom;
-}
-
-.header_bottom .gnb .submenu li:last-child {
-  background-image: none;
 }
 
 .header_bottom .gnb .submenu li:hover a {
