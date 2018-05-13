@@ -181,6 +181,7 @@ background-repeat:no-repeat;
 .notice .tab_tit{
   position: relative;
   border-bottom: 1px solid #e8eaf2;
+
 }
 
 .notice .tab_tit::after {
@@ -192,7 +193,6 @@ background-repeat:no-repeat;
 
 .notice > .tab_tit > li{
   float: left;
-  font-size: 15px;
   width: 105px;
   height:42px;
   line-height: 42px;
@@ -215,6 +215,7 @@ background-repeat:no-repeat;
   top:55px;
   left:24px;
   display: none;
+  font-weight:normal;
 }
 
 .notice .tab_tit > li > .active1 {
@@ -271,25 +272,22 @@ background-repeat:no-repeat;
   position: relative;
 }
 
-.pic_news:hover p{
-  background-color: rgba(62, 62, 62, 0.2);
-
-}
-
 .pic_news h3 a {
   display: block;
-  font-size: 17px;
-  height: 40px;
-  line-height: 40px;
+  height: 42px;
+  line-height:42px;
   text-indent: 16px;
+
 }
 
 .pic_news p a span{
   display: block;
-  height: 54px;
-  line-height: 54px;
+  height: 52px;
+  line-height: 52px;
   text-align: center;
   font-size: 13px;
+
+
 }
 
 .pic_news .pic_news_plus a{
@@ -313,9 +311,10 @@ background-repeat:no-repeat;
 }
 
 .sns h3 {
-  height:40px;
-  line-height: 40px;
+  height:42px;
+  line-height: 42px;
   text-align: center;
+
 }
 
 .sns li a{
@@ -343,8 +342,6 @@ background-repeat:no-repeat;
 
 /* 띠배너 시작 */
 
-.band_banner_wrap {
-}
 
 .band_banner_wrap p a {
   display: block;
@@ -632,6 +629,7 @@ background-repeat:no-repeat;
   height:40px;
   line-height: 40px;
   text-indent: 25px;
+
 }
 
 .newsletter h3 a {
