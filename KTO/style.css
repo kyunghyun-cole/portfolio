@@ -483,6 +483,7 @@ background-repeat:no-repeat;
   font-size: 12px;
   color:#e31937;
   font-family: 나눔스퀘어;
+  font-weight: 600;
 }
 
 .koreatour .koreatour_article {
@@ -565,6 +566,8 @@ background-repeat:no-repeat;
   background-position: center 30px;
   background-repeat: no-repeat;
   color:#fff;
+  font-weight: 600;
+  user-select: none;
 }
 
 .service > ul > li:nth-child(1) span {
